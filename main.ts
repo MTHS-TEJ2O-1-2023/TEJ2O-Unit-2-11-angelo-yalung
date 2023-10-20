@@ -5,6 +5,11 @@
  * This program chooses numbers between 0 and 99 and then shows what number is bigger than the other when shaking.
 */
 
+// starting up
+basic.clearScreen()
+basic.pause(1000)
+basic.showIcon(IconNames.Happy)
+
 // variable gets their number
 let num1: number
 let num2: number
