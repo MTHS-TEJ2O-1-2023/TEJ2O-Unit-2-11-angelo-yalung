@@ -6,28 +6,30 @@
 */
 
 // variable gets their number
-let num1: number = randint(0,99)
-let num2: number = randint(0,99)
+let num1: number = randint(0, 99)
+let num2: number = randint(0, 99)
 
 // if one number is bigger than why the other
-input.onGesture(Gesture.Shake, function() {
+input.onGesture(Gesture.Shake, function () {
   if (num1 > num2) {
-    basic.showString(num1 + '>')
+    basic.showNumber(num1)
+    basic.showString('>')
     basic.showNumber(num2)
   } else {
-    basic.showString(num1 + '<')
+    basic.showNumber(num1)
+    basic.showString('<')
     basic.showNumber(num2)
   }
 })
 
 // displaying number 1
-input.onButtonPressed(Button.A, function() {
-  basic.showString("#1")
+input.onButtonPressed(Button.A, function () {
+  basic.showString('#1')
   basic.showNumber(num1)
 })
 
 // displaying number 2
-input.onButtonPressed(Button.B, function() {
-  basic.showString("#2")
+input.onButtonPressed(Button.B, function () {
+  basic.showString('#2')
   basic.showNumber(num2)
 })
