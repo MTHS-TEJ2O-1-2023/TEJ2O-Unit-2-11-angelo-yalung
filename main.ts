@@ -10,7 +10,7 @@ basic.clearScreen()
 basic.pause(1000)
 basic.showIcon(IconNames.Happy)
 
-// variable gets their number
+// variables
 let num1: number
 let num2: number
 
@@ -22,7 +22,7 @@ input.onGesture(Gesture.Shake, function () {
     num2 = randint(0, 99)
     basic.showString('>')
     basic.showNumber(num2)
-} else {
+  } else {
     basic.showNumber(num1)
     basic.showString('<')
     basic.showNumber(num2)
