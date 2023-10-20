@@ -6,8 +6,10 @@
 */
 
 // variable gets their number
-let num1: number = randint(0, 99)
-let num2: number = randint(0, 99)
+let num1: number
+let num2: number
+num1 = randint(0, 99)
+num2 = randint(0, 99)
 
 // if one number is bigger than why the other
 input.onGesture(Gesture.Shake, function () {
