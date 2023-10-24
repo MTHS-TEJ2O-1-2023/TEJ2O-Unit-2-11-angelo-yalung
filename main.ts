@@ -13,19 +13,22 @@ basic.showIcon(IconNames.Happy)
 // variables
 let num1: number
 let num2: number
+num2 = randint(0, 99)
+num1 = randint(0, 99)
 
 // if one number is bigger than the other
 input.onGesture(Gesture.Shake, function () {
   if (num1 > num2) {
-    num1 = randint(0, 99)
     basic.showNumber(num1)
-    num2 = randint(0, 99)
     basic.showString('>')
     basic.showNumber(num2)
-  } else {
+    basic.showIcon(IconNames.Sad)
+  } 
+  else {
     basic.showNumber(num1)
     basic.showString('<')
     basic.showNumber(num2)
+    basic.showIcon(IconNames.Sad)
   }
 })
 
