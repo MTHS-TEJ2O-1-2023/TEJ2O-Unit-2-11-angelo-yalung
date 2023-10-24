@@ -19,11 +19,15 @@ num1 = randint(0, 99)
 // if one number is bigger than the other
 input.onGesture(Gesture.Shake, function () {
   if (num1 > num2) {
-    basic.showString(num1 + '>' + num2)
+    basic.showNumber(num1)
+    basic.showString('>')
+    basic.showNumber(num2)
     basic.showIcon(IconNames.Sad)
   }
   else {
-    basic.showString(num1 + '<' + num2)
+    basic.showNumber(num1)
+    basic.showString('<')
+    basic.showNumber(num2)
     basic.showIcon(IconNames.Sad)
   }
 })
@@ -32,10 +36,12 @@ input.onGesture(Gesture.Shake, function () {
 input.onButtonPressed(Button.A, function () {
   basic.showString('#1')
   basic.showNumber(num1)
+  basic.showIcon(IconNames.Happy)
 })
 
 // displaying number 2
 input.onButtonPressed(Button.B, function () {
   basic.showString('#2')
   basic.showNumber(num2)
+  basic.showIcon(IconNames.Happy)
 })
