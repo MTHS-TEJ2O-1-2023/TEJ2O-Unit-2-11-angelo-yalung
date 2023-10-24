@@ -16,7 +16,7 @@ let num2: number
 num1 = randint(0, 99)
 num2 = randint(0, 99)
 
-// if one number is bigger than why the other
+// if one number is bigger than the other
 input.onGesture(Gesture.Shake, function () {
   if (num1 > num2) {
     num1 = randint(0, 99)
