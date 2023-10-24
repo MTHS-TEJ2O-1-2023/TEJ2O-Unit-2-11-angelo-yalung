@@ -10,11 +10,9 @@ basic.clearScreen()
 basic.pause(1000)
 basic.showIcon(IconNames.Happy)
 
-// variable gets their number
+// variables
 let num1: number
 let num2: number
-num1 = randint(0, 99)
-num2 = randint(0, 99)
 
 // if one number is bigger than the other
 input.onGesture(Gesture.Shake, function () {
