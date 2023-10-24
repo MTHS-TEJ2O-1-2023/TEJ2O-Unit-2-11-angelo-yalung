@@ -7,16 +7,20 @@ This module is a Micro:bit MicroPython program that chooses 2 random numbers and
 from microbit import *
 import random
 
+# start up
+display.show(Image.HAPPY)
+
 # variables
 num1 = random.randint(0, 99)
 num2 = random.randint(0, 99)
 
 
 # if one number is bigger than the other
-if num1 > num2:
-    print(num1 + ">" + num2)
-else:
-    print(num1 + "<" + num2)
+if accelerometer.was_gesture("shake"):
+    if num1 > num2:
+        print(num1 + ">" + num2)
+    else:
+        print(num1 + "<" + num2)
 
 # displaying number 1
 input.on_button_pressed(button_a)
