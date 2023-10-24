@@ -23,7 +23,7 @@ input.onGesture(Gesture.Shake, function () {
     basic.showString('>')
     basic.showNumber(num2)
     basic.showIcon(IconNames.Sad)
-    }
+  }
   else {
     basic.showNumber(num1)
     basic.showString('>')
