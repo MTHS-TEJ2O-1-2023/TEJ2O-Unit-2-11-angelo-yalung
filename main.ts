@@ -19,12 +19,14 @@ num1 = randint(0, 99)
 // if one number is bigger than the other
 input.onGesture(Gesture.Shake, function () {
   if (num1 > num2) {
-    basic.showString(num1 + '>')
+    basic.showNumber(num1)
+    basic.showString('>')
     basic.showNumber(num2)
     basic.showIcon(IconNames.Sad)
-  } 
+    }
   else {
-    basic.showString(num1 + '<')
+    basic.showNumber(num1)
+    basic.showString('>')
     basic.showNumber(num2)
     basic.showIcon(IconNames.Sad)
   }
