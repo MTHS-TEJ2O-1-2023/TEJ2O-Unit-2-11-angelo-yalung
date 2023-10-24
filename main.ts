@@ -6,8 +6,8 @@
 */
 
 // variables
-let num1: number
-let num2: number
+let num1: number = randint(0, 99)
+let num2: number = randint(0, 99)
 
 // starting up
 basic.clearScreen()
@@ -19,11 +19,11 @@ num1 = randint(0, 99)
 // if one number is bigger than the other
 input.onGesture(Gesture.Shake, function () {
   if (num1 > num2) {
+    basic.clearScreen()
     basic.showNumber(num1)
     basic.showString('>')
     basic.showNumber(num2)
-  }
-  else {
+  } else {
     basic.showNumber(num1)
     basic.showString('<')
     basic.showNumber(num2)
