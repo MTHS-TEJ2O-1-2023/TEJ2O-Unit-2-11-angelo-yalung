@@ -11,8 +11,8 @@ basic.pause(1000)
 basic.showIcon(IconNames.Happy)
 
 // variables
-let num1: number
-let num2: number
+let num1: number = randint(0, 99)
+let num2: number = randint(0, 99)
 num2 = randint(0, 99)
 num1 = randint(0, 99)
 
